@@ -1003,3 +1003,20 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #2c5530;
 }
+
+/* Responsive Cart Fix */
+@media (max-width: 768px) {
+    .cart-container {
+        max-height: 70vh;
+        overflow-y: auto;
+        padding-bottom: 80px; /* Leave space for button */
+    }
+    .cart-checkout {
+        position: sticky;
+        bottom: 0;
+        background: white;
+        padding: 10px;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+}
