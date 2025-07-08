@@ -1,0 +1,27 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <circle cx="200" cy="150" r="100" fill="#d63031" opacity="0.1"/>
+  <circle cx="200" cy="150" r="80" fill="#d63031" opacity="0.2"/>
+  <circle cx="200" cy="150" r="60" fill="#d63031" opacity="0.3"/>
+  
+  <!-- Premium beef steak -->
+  <ellipse cx="200" cy="150" rx="80" ry="55" fill="#a0392a" stroke="#8b2f1f" stroke-width="3"/>
+  
+  <!-- Premium marbling -->
+  <path d="M140 135 Q160 130 180 135 Q200 140 220 135 Q240 130 260 135" stroke="#f8f8f8" stroke-width="3" fill="none"/>
+  <path d="M145 155 Q165 150 185 155 Q205 160 225 155 Q245 150 255 155" stroke="#f8f8f8" stroke-width="3" fill="none"/>
+  <path d="M150 175 Q170 170 190 175 Q210 180 230 175 Q250 170 260 175" stroke="#f8f8f8" stroke-width="3" fill="none"/>
+  
+  <!-- Fat marbling spots -->
+  <circle cx="165" cy="145" r="8" fill="#f8f8f8" opacity="0.9"/>
+  <circle cx="200" cy="135" r="6" fill="#f8f8f8" opacity="0.9"/>
+  <circle cx="235" cy="165" r="7" fill="#f8f8f8" opacity="0.9"/>
+  <circle cx="180" cy="170" r="5" fill="#f8f8f8" opacity="0.9"/>
+  
+  <!-- Premium quality indicator -->
+  <circle cx="220" cy="130" r="12" fill="#ffd700" opacity="0.8"/>
+  <text x="220" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#8b2f1f">★</text>
+  
+  <text x="200" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2c5530">Beef Steak (Halal)</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">Restaurant Quality</text>
+</svg>

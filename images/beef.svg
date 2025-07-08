@@ -1,0 +1,17 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <circle cx="200" cy="150" r="100" fill="#d63031" opacity="0.1"/>
+  <circle cx="200" cy="150" r="80" fill="#d63031" opacity="0.2"/>
+  <circle cx="200" cy="150" r="60" fill="#d63031" opacity="0.3"/>
+  
+  <!-- Beef steak shape -->
+  <path d="M150 120 Q180 100 220 120 Q240 140 230 170 Q210 190 180 185 Q150 180 140 150 Q145 130 150 120 Z" fill="#a0392a" stroke="#8b2f1f" stroke-width="2"/>
+  
+  <!-- Marbling lines -->
+  <path d="M160 135 Q175 140 185 135" stroke="#f8f8f8" stroke-width="2" fill="none"/>
+  <path d="M170 155 Q185 160 200 155" stroke="#f8f8f8" stroke-width="2" fill="none"/>
+  <path d="M190 140 Q205 145 215 140" stroke="#f8f8f8" stroke-width="2" fill="none"/>
+  
+  <text x="200" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2c5530">Premium Beef (Halal)</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">Fresh & Quality</text>
+</svg>

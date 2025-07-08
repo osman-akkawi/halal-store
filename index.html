@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halal Meat Store - Fresh & Quality</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <span>Halal Meat Store</span>
+                </div>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Fresh Halal Meat</h1>
+                <p>Premium quality halal meat delivered to your doorstep</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Premium Halal Products</h2>
+            
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="tab-btn active" onclick="switchCategory('lamb')" id="lambTab">
+                    <span class="tab-icon">🐑</span>
+                    <span class="tab-name-ar">لحم غنم</span>
+                    <span class="tab-name-en">Lamb Meat</span>
+                </button>
+                <button class="tab-btn" onclick="switchCategory('beef')" id="beefTab">
+                    <span class="tab-icon">🐄</span>
+                    <span class="tab-name-ar">لحم عجل</span>
+                    <span class="tab-name-en">Veal/Beef Meat</span>
+                </button>
+            </div>
+            
+            <!-- Lamb Category -->
+            <div class="category-content active" id="lambCategory">
+                <div id="lambProductsGrid" class="products-grid">
+                    <!-- Lamb products will be loaded here -->
+                </div>
+            </div>
+            
+            <!-- Beef/Veal Category -->
+            <div class="category-content" id="beefCategory">
+                <div id="beefProductsGrid" class="products-grid">
+                    <!-- Beef/Veal products will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be displayed here -->
+        </div>
+        <div class="cart-total">
+            <div class="total-row">
+                <span>Total: $<span id="cartTotal">0.00</span></span>
+            </div>
+        </div>
+        <button class="checkout-btn" onclick="showCheckout()" id="checkoutBtn" disabled>
+            Proceed to Checkout
+        </button>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Customer Information</h3>
+                <button class="close-modal" onclick="closeCheckout()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="customerName">Full Name *</label>
+                    <input type="text" id="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerPhone">Phone Number *</label>
+                    <input type="tel" id="customerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="deliveryAddress">Delivery Address *</label>
+                    <textarea id="deliveryAddress" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="mapsLocation">Google Maps Location (Optional)</label>
+                    <div class="location-input-group">
+                        <input type="url" id="mapsLocation" placeholder="https://maps.google.com/...">
+                        <button type="button" class="get-location-btn" onclick="getCurrentLocation()" title="Get my current location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Get Location
+                        </button>
+                    </div>
+                    <small class="location-status" id="locationStatus"></small>
+                </div>
+                <div class="order-summary">
+                    <h4>Order Summary</h4>
+                    <div id="orderSummary"></div>
+                    <div class="final-total">
+                        <strong>Total: $<span id="finalTotal">0.00</span></strong>
+                    </div>
+                </div>
+                <button type="submit" class="submit-order-btn" id="submitOrderBtn">
+                    <i class="fab fa-whatsapp"></i>
+                    Submit Order via WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="closeAll()"></div>
+
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Order Submitted Successfully!</h3>
+            <p>Your order has been sent to our WhatsApp. We'll contact you soon!</p>
+        </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

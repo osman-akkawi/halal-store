@@ -1,0 +1,23 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <circle cx="200" cy="150" r="100" fill="#d63031" opacity="0.1"/>
+  <circle cx="200" cy="150" r="80" fill="#d63031" opacity="0.2"/>
+  <circle cx="200" cy="150" r="60" fill="#d63031" opacity="0.3"/>
+  
+  <!-- Beef ribs -->
+  <rect x="140" y="130" width="120" height="40" fill="#a0392a" stroke="#8b2f1f" stroke-width="2" rx="5"/>
+  
+  <!-- Rib bones -->
+  <rect x="155" y="125" width="8" height="50" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+  <rect x="175" y="125" width="8" height="50" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+  <rect x="195" y="125" width="8" height="50" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+  <rect x="215" y="125" width="8" height="50" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+  <rect x="235" y="125" width="8" height="50" fill="#f8f8f8" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+  
+  <!-- Fat marbling -->
+  <path d="M145 140 Q165 145 185 140" stroke="#f8f8f8" stroke-width="2" fill="none"/>
+  <path d="M195 160 Q215 165 235 160" stroke="#f8f8f8" stroke-width="2" fill="none"/>
+  
+  <text x="200" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2c5530">Beef Ribs (Halal)</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">Great for BBQ</text>
+</svg>

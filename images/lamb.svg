@@ -1,0 +1,17 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <circle cx="200" cy="150" r="100" fill="#e84393" opacity="0.1"/>
+  <circle cx="200" cy="150" r="80" fill="#e84393" opacity="0.2"/>
+  <circle cx="200" cy="150" r="60" fill="#e84393" opacity="0.3"/>
+  
+  <!-- Lamb shoulder shape -->
+  <path d="M140 130 Q160 110 190 120 Q220 115 240 135 Q245 160 235 180 Q210 195 180 190 Q150 185 135 160 Q130 145 140 130 Z" fill="#c0392b" stroke="#a93226" stroke-width="2"/>
+  
+  <!-- Fat marbling -->
+  <circle cx="170" cy="145" r="8" fill="#f8f8f8" opacity="0.8"/>
+  <circle cx="200" cy="160" r="6" fill="#f8f8f8" opacity="0.8"/>
+  <circle cx="215" cy="145" r="5" fill="#f8f8f8" opacity="0.8"/>
+  
+  <text x="200" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2c5530">Lamb Shoulder (Halal)</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">Perfect for Slow Cooking</text>
+</svg>

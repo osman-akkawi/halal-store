@@ -1,0 +1,22 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <circle cx="200" cy="150" r="100" fill="#f39c12" opacity="0.1"/>
+  <circle cx="200" cy="150" r="80" fill="#f39c12" opacity="0.2"/>
+  <circle cx="200" cy="150" r="60" fill="#f39c12" opacity="0.3"/>
+  
+  <!-- Chicken breast shape -->
+  <path d="M150 130 Q180 115 220 130 Q240 150 230 175 Q210 190 180 185 Q150 180 140 155 Q145 140 150 130 Z" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="2"/>
+  
+  <!-- Lean meat texture -->
+  <path d="M160 140 Q190 145 220 140" stroke="#e17055" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M155 155 Q185 160 215 155" stroke="#e17055" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M160 170 Q190 175 220 170" stroke="#e17055" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <!-- Healthy indicators -->
+  <circle cx="175" cy="150" r="3" fill="#00b894" opacity="0.6"/>
+  <circle cx="200" cy="160" r="3" fill="#00b894" opacity="0.6"/>
+  <circle cx="210" cy="145" r="3" fill="#00b894" opacity="0.6"/>
+  
+  <text x="200" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2c5530">Chicken Breast (Halal)</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">Lean & Healthy</text>
+</svg>

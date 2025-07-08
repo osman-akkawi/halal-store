@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="groundMeatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0522D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CD853F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#FFF8DC" stroke="#D2691E" stroke-width="3"/>
+  
+  <!-- Ground meat pile -->
+  <circle cx="100" cy="100" r="45" fill="url(#groundMeatGradient)"/>
+  
+  <!-- Ground meat texture (small circles) -->
+  <circle cx="85" cy="85" r="4" fill="#654321" opacity="0.7"/>
+  <circle cx="110" cy="90" r="3" fill="#654321" opacity="0.7"/>
+  <circle cx="95" cy="105" r="3" fill="#654321" opacity="0.7"/>
+  <circle cx="115" cy="110" r="4" fill="#654321" opacity="0.7"/>
+  <circle cx="80" cy="115" r="3" fill="#654321" opacity="0.7"/>
+  <circle cx="105" cy="125" r="3" fill="#654321" opacity="0.7"/>
+  
+  <!-- More texture dots -->
+  <circle cx="90" cy="95" r="2" fill="#8B4513" opacity="0.8"/>
+  <circle cx="120" cy="100" r="2" fill="#8B4513" opacity="0.8"/>
+  <circle cx="85" cy="120" r="2" fill="#8B4513" opacity="0.8"/>
+  <circle cx="110" cy="115" r="2" fill="#8B4513" opacity="0.8"/>
+  
+  <!-- Halal symbol -->
+  <circle cx="160" cy="50" r="15" fill="#228B22" opacity="0.9"/>
+  <text x="160" y="55" text-anchor="middle" fill="white" font-size="12" font-weight="bold">حلال</text>
+  
+  <!-- Lamb icon -->
+  <text x="50" y="60" font-size="20">🐑</text>
+</svg>
