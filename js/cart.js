@@ -121,6 +121,9 @@ function updateCartDisplay() {
     
     cartTotal.textContent = total.toFixed(2);
     checkoutBtn.disabled = false;
+    
+    // Update scroll buttons after cart content changes
+    setTimeout(updateScrollButtons, 100);
 }
 
 // Function to update cart count
@@ -236,8 +239,63 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+// Mobile scroll functions for cart
+function scrollCartUp() {
+    const cartItems = document.getElementById('cartItems');
+    cartItems.scrollBy({
+        top: -200,
+        behavior: 'smooth'
+    });
+}
+
+function scrollCartDown() {
+    const cartItems = document.getElementById('cartItems');
+    cartItems.scrollBy({
+        top: 200,
+        behavior: 'smooth'
+    });
+}
+
+// Show/hide scroll buttons based on scroll position
+function updateScrollButtons() {
+    const cartItems = document.getElementById('cartItems');
+    const scrollButtons = document.getElementById('mobileScrollButtons');
+    const scrollUpBtn = scrollButtons.querySelector('.scroll-up');
+    const scrollDownBtn = scrollButtons.querySelector('.scroll-down');
+    
+    if (cartItems.scrollHeight <= cartItems.clientHeight) {
+        // No scrolling needed
+        scrollButtons.style.display = 'none';
+        return;
+    }
+    
+    scrollButtons.style.display = 'flex';
+    
+    // Show/hide up button
+    if (cartItems.scrollTop <= 10) {
+        scrollUpBtn.style.opacity = '0.3';
+        scrollUpBtn.style.pointerEvents = 'none';
+    } else {
+        scrollUpBtn.style.opacity = '1';
+        scrollUpBtn.style.pointerEvents = 'auto';
+    }
+    
+    // Show/hide down button
+    if (cartItems.scrollTop >= cartItems.scrollHeight - cartItems.clientHeight - 10) {
+        scrollDownBtn.style.opacity = '0.3';
+        scrollDownBtn.style.pointerEvents = 'none';
+    } else {
+        scrollDownBtn.style.opacity = '1';
+        scrollDownBtn.style.pointerEvents = 'auto';
+    }
+}
+
 // Initialize cart on page load
 document.addEventListener('DOMContentLoaded', function() {
     updateCartDisplay();
     updateCartCount();
+    
+    // Add scroll listener to cart items
+    const cartItems = document.getElementById('cartItems');
+    cartItems.addEventListener('scroll', updateScrollButtons);
 });
